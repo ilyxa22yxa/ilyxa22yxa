@@ -1,0 +1,14 @@
+// ==UserScript==
+// @name         Flyordie.io Mod Pack
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Imagine that you are rich in the game!
+// @author       ilyxa22yxa
+// @match        *://evoworld.io/*
+// @grant        none
+// ==/UserScript==
+
+window.addEventListener('load', function() {
+var mopeclicker = `<script src="https://mrmodpack.glitch.me/mopeclicker.js"></script>`;
+$('body').append(mopeclicker);
+});
